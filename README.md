@@ -28,7 +28,7 @@ NOTE: Before you start to use your new Oracle Public Cloud services make sure th
 
 #### 4. Container based application development lifecycle using Wercker and Container Cloud Service ####
 
-+ [Build Node.js-MongoDB container packaged application using Wercker and deploy to Oracle Container Cloud Service as the Stack of services](containers/nodejs-mongodb-stack/README.md)
++ [Build Node.js-MongoDB container packaged application using Wercker and deploy to Oracle Container Cloud Service as the Stack of services](nodejs-mongodb-stack/README.md)
 
 ---
 
@@ -36,4 +36,4 @@ NOTE: Before you start to use your new Oracle Public Cloud services make sure th
 
 Pull Requests are currently not being accepted. 
 
-### [License](../../LICENSE.md)
+### [License](LICENSE.md)
