@@ -1,14 +1,27 @@
 ![](common/ptf.header.png)
 
-### Prerequisites ###
+## Prerequisites
 
-The workshop is intended to work with an Oracle PaaS trial account. To get an account look into [here](common/request.for.trial.md). Get the following account details ready to complete the tutorial and replace to your values when it is required:
+####Virualbox VM images
+
+This workshop requires two virtualbox images to be downloaded and imported.
+
+1. [CaNDO.v01.ova](https://drive.google.com/open?id=0B6vGR7sqCgKnSGFTVWs3SkZON2c) for *Migrate WebLogic 10.3.6 (on premise) Application to Java Cloud Service with App2Cloud tool* lab
+2. [DevOpsWorkshopV3\_Final\_JavaOne.ova](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk) for *DevOps and Cloud Native Microservices Workshop* lab
+
+####Oracle Public Cloud PaaS  account
+
+The workshop is intended to work with an Oracle PaaS trial account. Get the following account details ready to complete the tutorial and replace to your values when it is required:
 
 + Oracle Cloud account **username** and **password**
 + Oracle Cloud **identity domain**
 + **Data center/region**
 
-NOTE: Before you start to use your new Oracle Public Cloud services make sure that the replication policy has been set for your account. Otherwise you can not create storage container which is necessary for most of the services. See [Selecting a Replication Policy for Oracle Storage Cloud Service](https://docs.oracle.com/cloud/latest/storagecs_common/CSSTO/GUID-5D53C11F-3D9E-43E4-8D1D-DDBB95DEC715.htm).
+IMPORTANT: Before you start to use your new Oracle Public Cloud services make sure that the replication policy has been set for your account. Otherwise you can not create storage container which is necessary for most of the services. See [Selecting a Replication Policy for Oracle Storage Cloud Service](https://docs.oracle.com/cloud/latest/storagecs_common/CSSTO/GUID-5D53C11F-3D9E-43E4-8D1D-DDBB95DEC715.htm).
+
+####Create Database Cloud Service instance
+
+It is recommended to provision Database Cloud Service instance in advance because it requires >20 minutes to complete. Use the [CaNDO.v01.ova](https://drive.google.com/open?id=0B6vGR7sqCgKnSGFTVWs3SkZON2c) image and follow the [instructions](preparation.md).
 
 ----
 

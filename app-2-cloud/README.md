@@ -18,7 +18,7 @@ This tutorial demonstrates how to:
 ### Prerequisites ###
 
 - Provided VirtualBox image or [custom environment prepared](../common/vbox.vm.md) for this tutorial.
-- Running and "empty" [Database Cloud Service](../dbcs-create/README.md) instance which has no Java Cloud Services dependency.
+- Running and "empty" [Database Cloud Service](createDBCS.md) instance which has no Java Cloud Services dependency.
 
 ### Steps ###
 
