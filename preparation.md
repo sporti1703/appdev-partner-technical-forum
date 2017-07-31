@@ -1,12 +1,8 @@
-<h2>Preparation to the workshop</h2>
+<h1>Preparation to the workshop</h1>
 
-##Download the VirtualBox VM
+## Create Oracle Database Cloud Services using (unofficial) Cloud tool for Oracle Public Cloud
 
-You need to download and import two VM image.
-
-##Create Oracle Database Cloud Services using (unofficial) Cloud tool for Oracle Public Cloud
-
-1. Locate the `environment.properties.emea2` or `environment.properties.us2` depending on the region where your domain was provisioned. Open the property file which fits for your account using *gedit* or *vi* text editor. Example:
+1. In the `/u01/content/cloud-native-devops-workshop/cloud-utils` folder locate the `environment.properties.emea2` or `environment.properties.us2` depending on the region where your domain was provisioned. Open the property file which fits for your account using *gedit* or *vi* text editor. Example:
 
 		[oracle@localhost cloud-utils]$ gedit /u01/content/cloud-native-devops-workshop/cloud-utils/environment.properties.emea2 &
 
