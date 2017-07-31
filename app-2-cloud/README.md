@@ -1,5 +1,3 @@
-![](../common/images/customer.logo.png)
----
 # ORACLE Cloud-Native DevOps workshop #
 ----
 ## Migrate Weblogic 10.3.6 (on premise) Application to Java Cloud Service ##

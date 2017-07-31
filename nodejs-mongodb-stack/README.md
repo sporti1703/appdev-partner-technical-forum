@@ -1,5 +1,3 @@
-![](../../common/images/customer.logo.png)
----
 # ORACLE Cloud-Native DevOps workshop #
 
 ## Build Node.js-MongoDB container packaged application using Wercker and deploy to Oracle Container Cloud Service ##
