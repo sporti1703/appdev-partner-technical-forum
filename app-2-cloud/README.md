@@ -195,7 +195,11 @@ Now use the `a2c-healthcheck` command in the AppToCloud tools to validate your o
 2.  The administration URL of the Administration Server.
 3.  The user credentials for the domain’s system administrator.
 
-Now run the `a2c-healthcheck.sh` to check and export the running domain. During the execution enter the administrator’s password: *welcome1*, when prompted for it.
+Now run the `a2c-healthcheck.sh` to check and export the running domain. Copy the following command and arguments into your terminal:
+
+	/u01/oracle_jcs_app2cloud/bin/a2c-healthcheck.sh -oh /u01/wins/wls1036 -adminUrl t3://localhost:7001 -adminUser weblogic -outputDir /u01/jcs_a2c_output
+
+During the execution enter the administrator’s password: *welcome1*, when prompted for it.
 
 	[oracle@localhost app-2-cloud]$ /u01/oracle_jcs_app2cloud/bin/a2c-healthcheck.sh -oh /u01/wins/wls1036 -adminUrl t3://localhost:7001 -adminUser weblogic -outputDir /u01/jcs_a2c_output
 	JDK version is 1.8.0_60-b27
@@ -255,8 +259,8 @@ In this tutorial we will use the same Database Cloud Service to host Oracle JRF 
 There are many ways to migrate on-premises database to Database Cloud Service. In this use case we are using SQL scripts to create the necessary schema, tables and data for the demo application. For this purpose you need to execute a single script which needs the followinfg parameters:
 
 - **Database** Cloud Service's **administrator username**. Typically it is *system* if you have not changed.
-- **Database** Cloud Service's **administrator password**. Password you provided during Database Cloud Service instance creation.
-- **SSH private key file**. Private key belongs to the Database Cloud Service. If you have followed the [Create Database Cloud Service instance using user interface](../dbcs-create/README.md) tutorial the file name must be *privateKey* and the location is the `/u01/content/cloud-native-devops-workshop` folder. If you have different name and location then provide that path and file name.
+- **Database** Cloud Service's **administrator password**. Password you provided during Database Cloud Service instance creation. If you used the cloud tool and have not changed the default value in `environment.properties` then it is *Welcome_1*.
+- **SSH private key file**. Private key belongs to the Database Cloud Service. If you have followed the [preparation guide](preparation.md) guide the file name must be *pk.openssh* and the location is the `/u01/content/cloud-native-devops-workshop/cloud-utils` folder. If you have different name and location then provide that path and file name.
 - **Database** Cloud Service's public **IP address**. The public IP address of the instance to access to the service's VM. See next step to determine.
 - **Pluggable database name** is optional. In case Oracle Database Cloud Service the **default** is *PDB1* which will be used. If your instance has different name please specify.
 
@@ -270,7 +274,11 @@ Note the public IP address of the node hosting Database Cloud Service.
 
 ![](images/dbcs.public.ip.png)
 
-Having all the necessary input run the script which will prepare the Database Cloud Service for Petstore demo application. The output should be similar to the following:
+Having all the necessary input run the script which will prepare the Database Cloud Service for Petstore demo application. If you have the default values just replace the correct IP address:
+
+	./prepareDBCS.sh system Welcome_1 ../cloud-utils/pk.openssh <YOUR_DBCS_PUBLIC_IP>
+
+The output should be similar to the following:
 
 	[oracle@localhost app-2-cloud]$ ./prepareDBCS.sh system <YOUR_DBCS_SYSTEM_PASSWORD ><YOUR_PRIVATEKEY_LOCATION> <YOUR_DBCS_PUBLIC_IP>
 	Enter passphrase for key '../pk.openssh': 
@@ -342,12 +350,12 @@ Now use the `a2c-export.sh` script in the AppToCloud tools to capture your on-pr
 1.  Top level directory of the WebLogic Server domain.
 2.  Top level directory of your WebLogic Server installation.
 2.  Folder to save archive and JSON config file.
-3.  Cloud storage container. (in the format: `Storage-MyAccount/MyContainer`)
+3.  Cloud storage container. Format of the path: `Storage-<IDENTITY_DOMAIN>/MyContainer`. If you have not changed the container name in the `environment.properties` then it has to be `app2cloud`.
 4.  Cloud storage user credential.
 
 Using the parameters above run the `a2c-export.sh` to complete the export and upload. The following parameters belong to prepared virtualbox environment except the Cloud storage conatiner and credentials. Please change according to your environment. When prompted, enter the password for your cloud storage user.
 
-	[oracle@localhost app-2-cloud]$ /u01/oracle_jcs_app2cloud/bin/a2c-export.sh -oh /u01/wins/wls1036 -domainDir /u01/wins/wls1036/user_projects/domains/petstore_domain -archiveFile /u01/jcs_a2c_output/petstore_domain.zip -cloudStorageContainer  <YOUR_CLOUD_CONTAINER_PATH> -cloudStorageUser <YOUR_CLOUD_STORAGE_USER>
+	[oracle@localhost app-2-cloud]$ /u01/oracle_jcs_app2cloud/bin/a2c-export.sh -oh /u01/wins/wls1036 -domainDir /u01/wins/wls1036/user_projects/domains/petstore_domain -archiveFile /u01/jcs_a2c_output/petstore_domain.zip -cloudStorageContainer Storage-<IDENTITY_DOMAIN>/app2cloud -cloudStorageUser <YOUR_CLOUD_STORAGE_USER>
 	JDK version is 1.8.0_60-b27
 	A2C_HOME is /u01/oracle_jcs_app2cloud
 	/usr/java/latest/bin/java -Xmx512m -DUseSunHttpHandler=true -cp /u01/oracle_jcs_app2cloud/jcs_a2c/modules/features/jcsa2c_lib.jar -Djava.util.logging.config.class=oracle.jcs.lifecycle.util.JCSLifecycleLoggingConfig oracle.jcs.lifecycle.discovery.AppToCloudExport -oh /u01/wins/wls1036 -domainDir /u01/wins/wls1036/user_projects/domains/petstore_domain -archiveFile /u01/jcs_a2c_output/petstore_domain.zip -cloudStorageContainer Storage-appdev004/app2cloud -cloudStorageUser peter.nagy@oracle.com
@@ -383,7 +391,7 @@ Using the parameters above run the `a2c-export.sh` to complete the export and up
 	a2c-export completed successfully (exit code = 0)
 	[oracle@localhost bin]$ 
 
-Verify that the Export tool completed successfully (exit code is 0). Also note the name of the generated JSON file.
+Verify that the Export tool completed successfully (exit code has to be 0). Also note the name of the generated JSON file.
 
 Address any problems described in the Error Messages section of the Export tool output. Then run the Export tool again.
 You can also view the activity report as an HTML file. The report’s file name and location are included in the Export tool output.
@@ -425,19 +433,19 @@ On the Java Cloud Service Details page complete the necessary fields.
 
 - Service name: **petstore**
 - Description: optional.
-- SSH public key. If you want to use the same like for Database Cloud Service then copy that value or create new one using that option on the dialog opened.
+- SSH public key. Use the same what was provided for the Database Cloud Service. That can be found in the `environment.properties` and the parameter name is **ssh.public.key=**. Click the **Edit** button to open the SSH public key dialog and copy the **ssh.public.key** property value to the Key Value text area. However you can also create a new key pair if you would like to avoid the find-copy-paste steps.
 - Enable access to Administration Consoles: enable.
 - Shape: use the default, small instance.
-- Username: Weblogic administrator username.
-- Password: Weblogic administrator password.
+- Username: Weblogic administrator username. For example: *weblogic*
+- Password: Weblogic administrator password. For example: *welcome1*
 - Cluster size: leave the 2 which is based on the JSON configuration file.
-- Cloud Storage container: the path of the container stores the exported domain archive and JSON configuration file. Example: `Storage-MyAccount/Container1``.
+- Cloud Storage container: the path of the container to store backup and configuration related to this Java Cloud Service. Name it to `petstore`. Format is: `Storage-<IDENTITY_DOMAIN>/petstore`.
 - Cloud Storage Username: name of a cloud user that has access to this storage container.
 - Cloud Storage Password: password of a cloud user that has access to this storage container.
-- Create Cloud Storage Container: enable to create independent container for Java Cloud Service.
+- Create Cloud Storage Container: enable to create the container defined above for Java Cloud Service.
 - Database: Database Cloud Service for required schema. As we recommended use the same what was prepared previously for Petstore demo application.
 - Database Administrator Username: **sys**.
-- Database Password: the password of Database Administrator.
+- Database Password: the password of Database Administrator. If you have not changed the value in the `environment.properties` then it is *Welcome_1*.
 - PDB Name: leave *Default* which is usually PDB1.
 - Provision Load Balancer: Yes.
 - Load Balancer details: leave the default.
@@ -448,7 +456,8 @@ On the **Additional Service Details** screen, select the first **Application Dat
 
 - DBCS Instance: select the Database Cloud Service DBCS Instance for Petstore application and which was also selected to host JRF required schemas on the previous screen.
 - Username: **petstore**. This data source will connect to the database as this user.
-- Password: the password of Database Administrator. (The script has set the same password for **petstore** schema.)
+- Password: the password of Database Administrator. If you have not changed the value in the `environment.properties` then it is *Welcome_1*. (The script has set the same password for **petstore** schema.)
+- PDB: leave the **default**.
 
 Click **OK** to accept your changes. Click **Next**.
 ![](images/18.jcs.datasource.png)
