@@ -1,6 +1,6 @@
 <h1>Preparation to the workshop</h1>
 
-## Create Oracle Database Cloud Services using (unofficial) Cloud tool for Oracle Public Cloud
+## Create Oracle Database Cloud Services using (unofficial) cloud tool for Oracle Public Cloud
 
 1. In the `/u01/content/cloud-native-devops-workshop/cloud-utils` folder locate the `environment.properties.emea2` or `environment.properties.us2` depending on the region where your domain was provisioned. Open the property file which fits for your account using *gedit* or *vi* text editor. Example:
 
