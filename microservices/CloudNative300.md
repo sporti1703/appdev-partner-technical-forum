@@ -1,5 +1,5 @@
 # ORACLE Cloud-Native DevOps workshop #
-----
+
 ## Cloud Native Rapid JavaScript Development with Node.js
 
 ### Introduction

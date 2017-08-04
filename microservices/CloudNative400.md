@@ -1,5 +1,5 @@
 # ORACLE Cloud-Native DevOps workshop #
-----
+
 ## Cloud Native Developer Cloud Service Administration
 
 ## Introduction

@@ -1,5 +1,5 @@
 # ORACLE Cloud-Native DevOps workshop #
-----
+
 ## Agile Project Management
 
 ### Introduction

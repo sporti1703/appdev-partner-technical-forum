@@ -1,5 +1,5 @@
 # ORACLE Cloud-Native DevOps workshop #
-----
+
 ## Continuous Delivery of Java Microservices
 
 ### Introduction
