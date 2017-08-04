@@ -4,10 +4,7 @@
 
 #### Virtualbox VM images
 
-This workshop requires two virtualbox images to be downloaded and imported.
-
-1. [CaNDO.v01.ova](https://drive.google.com/open?id=0B6vGR7sqCgKnSGFTVWs3SkZON2c) for *Migrate WebLogic 10.3.6 (on premise) Application to Java Cloud Service with App2Cloud tool* lab
-2. [DevOpsWorkshopV3\_Final\_JavaOne.ova](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk) for *DevOps and Cloud Native Microservices Workshop* lab
+This workshop requires the [cando.v2.0.ova](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk) virtualbox image to be downloaded and imported.
 
 #### Oracle Public Cloud PaaS  account
 
@@ -21,27 +18,29 @@ IMPORTANT: Before you start to use your new Oracle Public Cloud services make su
 
 #### Create Database Cloud Service instance
 
-It is recommended to provision Database Cloud Service instance in advance because it requires >20 minutes to complete. Use the [CaNDO.v01.ova](https://drive.google.com/open?id=0B6vGR7sqCgKnSGFTVWs3SkZON2c) image and follow the [instructions](preparation.md).
+It is recommended to provision Database Cloud Service instance in advance because it requires >20 minutes to complete. Use the [cando.v2.0.ova](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk) image and follow the [instructions](preparation.md).
 
 ----
 
-#### 1. Migrate WebLogic 10.3.6 (on premise) Application to Java Cloud Service with App2Cloud tool ####
+#### Moving workload to the cloud ####
 
-+ [Migrate Weblogic 10.3.6 (on premise) Application to Java Cloud Service with App2Cloud tool](app-2-cloud/README.md)
++ [Lab 1: Migrate Weblogic 10.3.6 (on premise) Application to Java Cloud Service with App2Cloud tool](app-2-cloud/README.md)
++ [Lab 2: Scaling Down Nodes in a Java Cloud Service Instance Using the Command Line Interface](jcs-scale-down-psm/README.md)
++ [Lab 3: Scaling WLS Nodes in a Java Cloud Service Instance](jcs-scale-up-ui/README.md)
 
-#### 2. DevOps and Cloud Native Microservices Workshop
+#### DevOps and Cloud Native Microservices
 
-+ [Lab 100: Agile Project Management](microservices/CloudNative100.md)
-+ [Lab 200: Continuous Delivery of Java Microservices](microservices/CloudNative200.md)
-+ [Lab 300: Cloud Native Rapid JavaScript Development with Node.js](microservices/CloudNative300.md)
-+ [Lab 400: Cloud Native Developer Cloud Service Administration](microservices/CloudNative400.md)
++ [Lab 3: Agile Project Management](microservices/CloudNative100.md)
++ [Lab 4: Continuous Delivery of Java Microservices](microservices/CloudNative200.md)
++ [Lab 5: Cloud Native Rapid JavaScript Development with Node.js](microservices/CloudNative300.md)
++ [Lab 6: Cloud Native Developer Cloud Service Administration](microservices/CloudNative400.md)
 
-#### 3. Deploy complex cloud environment using Oracle Cloud Stack Manager ###
-+ [FixItFast Cloud Native Application which includes multiple Oracle Application Container Cloud Services (Cache, Java, NodeJS)](stack/stack.cache.md)
+#### Deploy complex cloud environment using Oracle Cloud Stack Manager ###
++ [Lab 7: FixItFast Cloud Native Application which includes multiple Oracle Application Container Cloud Services (Cache, Java, NodeJS)](stack/stack.cache.md)
 
-#### 4. Container based application development lifecycle using Wercker and Container Cloud Service ####
+#### Container based application development lifecycle using Wercker and Container Cloud Service ####
 
-+ [Build Node.js-MongoDB container packaged application using Wercker and deploy to Oracle Container Cloud Service as the Stack of services](nodejs-mongodb-stack/README.md)
++ [Lab 8: Build Node.js-MongoDB container packaged application using Wercker and deploy to Oracle Container Cloud Service as the Stack of services](nodejs-mongodb-stack/README.md)
 
 ---
 

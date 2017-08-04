@@ -396,6 +396,10 @@ You can also view the activity report as an HTML file. The report’s file name 
 
 After exporting your domain and uploading the files to a storage container, you are ready to create an Oracle Java Cloud Service instance.
 
+Before moving forward stop the WebLogic 10.3.6. *petstore* domain to free up resources on your desktop. Now use `killall` to avoid administration tools even if it is not a graceful shutdown.
+
+	 [oracle@localhost bin]$ killall java
+
 #### Creating an Oracle Java Cloud Service Instance with AppToCloud ####
 
 In order to import your source domain configuration and applications into Oracle Java Cloud Service, you must associate a new service instance with the files that you previously generated with the AppToCloud tools.
