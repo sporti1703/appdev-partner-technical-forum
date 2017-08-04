@@ -1,14 +1,12 @@
-![](images/300/PictureLab.png)  
+# ORACLE Cloud-Native DevOps workshop #
+----
+## Cloud Native Rapid JavaScript Development with Node.js
 
-Update: March 31, 2017
-
-## Introduction
+### Introduction
 
 This is the third of several labs that are part of the **Oracle Cloud Native Microservices** workshop. This workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project that will create and use several Microservices.
 
-In the previous lab (200), the Java Developer (Bala Gupta) created several microservices that pull data from twitter and allow for dynamic filtering based on keywords. In this lab, you will assume the role of the front-end JavaScript developer who will create a web application that incorporates the data from those microservices. This node.js application will be developed in the Developer Cloud Service taking advantage of automated builds and deployments to the Application Container Cloud Service.
-
-***To log issues***, click here to go to the [github oracle](https://github.com/oracle/cloud-native-devops-workshop/issues/new) repository issue submission form.
+In the previous lab (4), the Java Developer (Bala Gupta) created several microservices that pull data from twitter and allow for dynamic filtering based on keywords. In this lab, you will assume the role of the front-end JavaScript developer who will create a web application that incorporates the data from those microservices. This node.js application will be developed in the Developer Cloud Service taking advantage of automated builds and deployments to the Application Container Cloud Service.
 
 ## Objectives
 
@@ -28,7 +26,7 @@ In the previous lab (200), the Java Developer (Bala Gupta) created several micro
 
 ### **STEP 1**: Review Agile Board
 
-- This Lab assumes that you completed Lab 100 and 200 and are still connected to the Oracle Cloud, that you're still in the Developer cloud Service Dashboard, and you're viewing the "Twitter Feed Marketing Project". If for some reason that is not the case, follow the first several Steps of Lab 100 to once again view the Developer Cloud Service Console.
+- This Lab assumes that you completed Lab 3 and 4 and are still connected to the Oracle Cloud, that you're still in the Developer cloud Service Dashboard, and you're viewing the "Twitter Feed Marketing Project". If for some reason that is not the case, follow the first several Steps of Lab 4 to once again view the Developer Cloud Service Console.
 
     ![](images/200/Picture10.5.png)  
 
@@ -396,7 +394,11 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojtable'], function (oj, ko) {
 });
 ```
 
-- Back in the browser; navigate back to the Application Container Cloud Service service console. Copy URL for **JavaTwitterMicroservice** that was created in Lab 200.
+- Back in the browser; navigate back to the Application Container Cloud Service service console. Copy URL for **JavaTwitterMicroservice** that was created in Lab 4
+- 
+- 
+- 
+- .
 
     ![](images/300/image066.png)  
 

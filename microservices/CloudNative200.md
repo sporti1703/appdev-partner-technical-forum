@@ -1,13 +1,12 @@
-![](images/200/Picture-lab.png)  
-Update: March 31, 2017
+# ORACLE Cloud-Native DevOps workshop #
+----
+## Continuous Delivery of Java Microservices
 
-## Introduction
+### Introduction
 
 This is the second of several labs that are part of the **Oracle Cloud DevOps Cloud Native Microservices workshop.** This workshop will walk you through the Software Development Lifecycle (SDLC) for a Cloud Native project that will create and use several Microservices.
 
-In the first lab (100), the Project Manager created a new project in the Developer Cloud Service and also created and assigned tasks to the developers of this application. In this lab you will assume the persona of the Java developer, who will be tasked with creating several microservices that will supply data to any front-end or analytics applications (one of which you will build in the following lab, lab 300).
-
-***To log issues***, click here to go to the [github oracle](https://github.com/oracle/cloud-native-devops-workshop/issues/new) repository issue submission form.
+In the previous lab (3), the Project Manager created a new project in the Developer Cloud Service and also created and assigned tasks to the developers of this application. In this lab you will assume the persona of the Java developer, who will be tasked with creating several microservices that will supply data to any front-end or analytics applications (one of which you will build in the following lab, lab 300).
 
 ## Objectives
 
@@ -26,7 +25,7 @@ In the first lab (100), the Project Manager created a new project in the Develop
 
 ### **STEP 1**: Review Agile Board
 
-- This Lab assumes that you just completed Lab 100 and are still connected to the Oracle Cloud, that you're still in the Developer cloud Service Dashboard, and you're viewing the "Twitter Feed Marketing Project". If for some reason that is not the case, follow the first several Steps of Lab 100 to once again view the Developer Cloud Service Console.
+- This Lab assumes that you just completed Lab 3 and are still connected to the Oracle Cloud, that you're still in the Developer cloud Service Dashboard, and you're viewing the "Twitter Feed Marketing Project". If for some reason that is not the case, follow the first several Steps of Lab 3 to once again view the Developer Cloud Service Console.
 
     ![](images/200/Picture10.5.png)  
 
