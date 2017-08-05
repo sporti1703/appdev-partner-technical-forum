@@ -46,9 +46,9 @@ Click **Next** and select *Initial Repository* as template.
 
 ![](images/04.select.template.png)
 
-Click **Next** and on the Properties page select *MARKDOWN* as Wiki Markup and select *Import existing repository* to copy existing repository in this new project. Enter or copy the *https://github.com/oracle/cloud-native-devops-workshop.git* repository address.
+Click **Next** and on the Properties page select *MARKDOWN* as Wiki Markup and select *Import existing repository* to copy existing repository in this new project. Enter or copy the *https://github.com/nagypeter/cloud-native-devops-workshop.git* repository address.
 
-![](images/05.import.repository.png)
+![](images/05.import.np.repository.png)
 
 Now click **Finish** to create the project and to clone the specified repository.
 
@@ -311,7 +311,7 @@ Now create stack using the imported , custom stack template. Click the drop down
 
 ![](images/28.create.stack.cache.png)
 
-The Create New Oracle Cloud Stack — Details page is displayed. Enter *FixItFast-application* as **Name**  and optional **Description** for the stack. Do not select **On Failure Retain Resources** otherwise the stack creation fails, any resources that were created will not be automatically deleted.
+The Create New Oracle Cloud Stack — Details page is displayed. Enter *FixItFastApp* as **Name**  and optional **Description** for the stack. Do not select **On Failure Retain Resources** otherwise the stack creation fails, any resources that were created will not be automatically deleted.
 The rest of the parameters are specific to the template you imported. If you haven't changed the storage container build parameter and the stack template configuration file you can accept the default values. Click **Next**.
 
 ![](images/29.stack.details.cache.png)
@@ -320,7 +320,7 @@ The Create New Oracle Cloud Stack — Confirmation page is displayed. Review the
 
 ![](images/30.confirm.cache.png)
 
-To check the stack status by services go back to the **Stacks** page and click the **FixItFast-application** stack.
+To check the stack status by services go back to the **Stacks** page and click the **FixItFastApp** stack.
 
 ![](images/31.creating.stack.cache.png)
 
@@ -356,7 +356,7 @@ Note the first customer's name. In this demo it is *Bob Smith*. You will update 
 
 ![](images/39.customers.png)
 
-Go back to the  FixItFast-application's Stack detail page find the *backendCacheJava* application and click it's URL.
+Go back to the  FixItFastApp's Stack detail page find the *backendCacheJava* application and click it's URL.
 
 ![](images/40.backendjava.url.cache.png)
 
