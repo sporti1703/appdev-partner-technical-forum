@@ -14,12 +14,6 @@ The workshop is intended to work with an Oracle PaaS trial account. Get the foll
 + Oracle Cloud **identity domain**
 + **Data center/region**
 
-IMPORTANT: Before you start to use your new Oracle Public Cloud services make sure that the replication policy has been set for your account. Otherwise you can not create storage container which is necessary for most of the services. See [Selecting a Replication Policy for Oracle Storage Cloud Service](https://docs.oracle.com/cloud/latest/storagecs_common/CSSTO/GUID-5D53C11F-3D9E-43E4-8D1D-DDBB95DEC715.htm).
-
-#### Create Database Cloud Service instance
-
-It is recommended to provision Database Cloud Service instance in advance because it requires >20 minutes to complete. Use the [cando.v2.0.ova](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk) image and follow the [instructions](preparation.md).
-
 ----
 
 #### Moving workload to the cloud ####

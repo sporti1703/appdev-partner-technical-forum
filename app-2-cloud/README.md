@@ -15,8 +15,10 @@ This tutorial demonstrates how to:
 
 ### Prerequisites ###
 
-- Provided VirtualBox image or [custom environment prepared](../common/vbox.vm.md) for this tutorial.
-- Running and "empty" [Database Cloud Service](createDBCS.md) instance which has no Java Cloud Services dependency.
+- Running and "empty" [Database Cloud Service](../preparation.md) instance which has no Java Cloud Services dependency.
+- Download SSH keypair (`pk.openssh`, `public.key`) into your `/u01/content/cloud-native-devops-workshop/cloud-utils` directory from image [location](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk). Than change the permissions of the private key:
+
+		[oracle@localhost cloud-utils]$ chmod 400 /u01/content/cloud-native-devops-workshop/cloud-utils/pk.openssh		
 
 ### Steps ###
 
@@ -435,7 +437,7 @@ On the Java Cloud Service Details page complete the necessary fields.
 
 - Service name: **petstore**
 - Description: optional.
-- SSH public key. Use the same what was provided for the Database Cloud Service. That can be found in the `environment.properties` and the parameter name is **ssh.public.key=**. Click the **Edit** button to open the SSH public key dialog and copy the **ssh.public.key** property value to the Key Value text area. However you can also create a new key pair if you would like to avoid the find-copy-paste steps.
+- SSH public key. Use the same what was provided for the Database Cloud Service. That can be found in the `environment.properties` or in the file `public.key` located in `/u01/content/cloud-native-devops-workshop/cloud-utils/`.The parameter name is **ssh.public.key=** if you copy from the `environment.properties`. Click the **Edit** button to open the SSH public key dialog and copy the **ssh.public.key** property value or the `public.key` file's content to the Key Value text area. However you can also create a new key pair if you would like to avoid the find-copy-paste steps.
 - Enable access to Administration Consoles: enable.
 - Shape: use the default, small instance.
 - Username: Weblogic administrator username. For example: *weblogic*
