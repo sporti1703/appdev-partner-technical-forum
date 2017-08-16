@@ -31,8 +31,8 @@ The workshop is intended to work with an Oracle PaaS trial account. Get the foll
 + [Lab 6: FixItFast Cloud Native Application which includes multiple Oracle Application Container Cloud Services (Cache, Java, NodeJS)](stack/stack.cache.md)
 
 #### Day 2 ####
-+ [Lab 1: Scaling Down Nodes in a Java Cloud Service Instance Using the Command Line Interface](jcs-scale-down-psm/README.md)
-+ [Lab 2: Scaling WLS Nodes in a Java Cloud Service Instance](jcs-scale-up-ui/README.md)
++ [Lab 1: Scaling Up WLS Nodes in a Java Cloud Service Instance](jcs-scale-up-ui/README.md)
++ [Lab 2: Scaling Down Nodes in a Java Cloud Service Instance Using the Command Line Interface](jcs-scale-down-psm/README.md)
 ---
 
 ### Contributing
