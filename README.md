@@ -4,7 +4,7 @@
 
 #### Virtualbox VM images
 
-This workshop requires the [cando.v2.0.ova](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk) virtualbox image to be downloaded and imported.
+This workshop requires the [DevOpsWorkshopV3_final_JavaOne.ova](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk) virtualbox image to be downloaded and imported.
 
 #### Oracle Public Cloud PaaS  account
 
