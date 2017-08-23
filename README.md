@@ -4,7 +4,7 @@
 
 #### Virtualbox VM images
 
-This workshop requires the [DevOpsWorkshopV3_final_JavaOne.ova](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk) virtualbox image to be downloaded and imported.
+This workshop requires the [cando.v2.0.ova](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk) virtualbox image to be downloaded and imported.
 
 #### Oracle Public Cloud PaaS  account
 
@@ -30,9 +30,7 @@ The workshop is intended to work with an Oracle PaaS trial account. Get the foll
 #### OPTIONAL: Deploy complex cloud environment using Oracle Cloud Stack Manager ###
 + [Lab 6: FixItFast Cloud Native Application which includes multiple Oracle Application Container Cloud Services (Cache, Java, NodeJS)](stack/stack.cache.md)
 
-#### Day 2 ####
-+ [Lab 1: Scaling Up WLS Nodes in a Java Cloud Service Instance](jcs-scale-up-ui/README.md)
-+ [Lab 2: Scaling Down Nodes in a Java Cloud Service Instance Using the Command Line Interface](jcs-scale-down-psm/README.md)
+
 ---
 
 ### Contributing
