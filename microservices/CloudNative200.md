@@ -67,7 +67,7 @@ To begin development on our Twitter feed microservices, we could start coding fr
 
 - In the left hand navigation panel, click **Project**
 
-- On the right side in the **REPOSITORIES** section, click on **New Repository** to create a new Git Repository.
+- On the right side in the **REPOSITORIES** section, click on **New Repository** to create a new Git Repository. (Known issue: In case of the **+New Repository** button is missing try to resize the browser e.g. minimize and maximize to make the button appear.)
 
     ![](images/200/Picture17.png)  
 

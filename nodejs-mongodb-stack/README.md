@@ -252,7 +252,7 @@ Click **Save** on service details page to save the service.
 
 #### Create Oracle Container Cloud Service Stack to manage Node.js sample and MongoDB services (containers) as a single application ####
 
-Now Wercker built Node.js sample application container available as service. MongoDB by default created so you can create your stack. Click the **Stack** menu on the left side and than click **New Stack** button.
+Now Wercker built Node.js sample application container available as service. The MongoDB container by default created so you can create your stack. Click the **Stack** menu on the left side and than click **New Stack** button.
 
 ![alt text](images/36.create.stack.png)
 
@@ -260,7 +260,7 @@ Enter the Stack name: *employee-nodejs-mongodb*. Than drag and drop **MongoDB** 
 
 ![alt text](images/37.drag.and.drop.mongodb.png)
 
-The MongoDB service configuration page opens. Leave the default settings and click **Save**.
+The **mongodb** service configuration page opens. Leave the default settings and click **Save**.
 
 ![alt text](images/38.mongodb.configuration.png)
 
@@ -268,7 +268,7 @@ Find the *employee-nodejs* service and drag and drop to the grid area. The servi
 
 ![alt text](images/39.nodejs.configuration.png)
 
-Here you need to configure the (network) link between the containers. *Service* refers to the defined Container Cloud Service which is MongoDB if you haven't changed the MongoDB configuration in the previous step. Finally *Alias* is the host name of the service. This is what needed to configure MongoDB driver to access MongoDB instance from Node.js sample application service. Click **Save**.
+Here you need to configure the (network) link between the containers. *Service* refers to the defined Container Cloud Service which is **mongodb** if you haven't changed the MongoDB configuration in the previous step. Finally *Alias* is the host name of the service. This is what needed to configure MongoDB driver to access **mongodb** instance from Node.js sample application service. Click **Save**.
 
 ![alt text](images/40.links.png)
 
