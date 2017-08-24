@@ -1,5 +1,3 @@
-# ORACLE Cloud-Native DevOps workshop #
-----
 ## Scaling Down Nodes in a Java Cloud Service Instance Using the Command Line Interface ##
 
 ### Introduction ###

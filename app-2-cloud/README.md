@@ -1,5 +1,5 @@
 # ORACLE Cloud-Native DevOps workshop #
-----
+-----
 ## Migrate Weblogic 10.3.6 (on premise) Application to Java Cloud Service ##
 
 ### About this tutorial ###
