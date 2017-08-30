@@ -40,7 +40,7 @@ The workshop is intended to work with an Oracle PaaS trial account. Get the foll
 | 14:00-14:45 | Docker Native Application Development |
 | 14:45-15:15 | [Lab 8: Build Node.js-MongoDB container packaged application using Wercker and deploy to Oracle Container Cloud Service as the Stack of services](nodejs-mongodb-stack/README.md) |
 | **15:15-15:30** | **Coffee break** |
-| 15:30-16:00 | [Lab 8: Build Node.js-MongoDB container packaged application using Wercker and deploy to Oracle Container Cloud Service as the Stack of services](nodejs-mongodb-stack/README.md) |
+| 15:30-16:00 | [Lab 8 (Continue): Build Node.js-MongoDB container packaged application using Wercker and deploy to Oracle Container Cloud Service as the Stack of services](nodejs-mongodb-stack/README.md) |
 | 16:00-17:00 | [Lab 9 (Optional): Scaling Down Nodes in a Java Cloud Service Instance Using the Command Line Interface](jcs-scale-down-psm/README.md) |
 
 | **Friday** |  |
