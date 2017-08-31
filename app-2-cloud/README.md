@@ -260,7 +260,7 @@ There are many ways to migrate on-premises database to Database Cloud Service. I
 
 - **Database** Cloud Service's **administrator username**. Typically it is *system* if you have not changed.
 - **Database** Cloud Service's **administrator password**. Password you provided during Database Cloud Service instance creation. If you used the cloud tool and have not changed the default value in `environment.properties` then it is *Welcome_1*.
-- **SSH private key file**. Private key belongs to the Database Cloud Service. If you have followed the [preparation guide](preparation.md) guide the file name must be *pk.openssh* and the location is the `/u01/content/cloud-native-devops-workshop/cloud-utils` folder. If you have different name and location then provide that path and file name.
+- **SSH private key file**. Private key belongs to the Database Cloud Service. If you have followed the [preparation guide](preparation.md) guide the file name must be *pk.openssh* and the location is the `/u01/content/cloud-native-devops-workshop/cloud-utils` folder. If you have different name and location then provide that path and file name. For the pre-provisioned Database Cloud Service the passphrase is: *weblogic*
 - **Database** Cloud Service's public **IP address**. The public IP address of the instance to access to the service's VM. See next step to determine.
 - **Pluggable database name** is optional. In case Oracle Database Cloud Service the **default** is *PDB1* which will be used. If your instance has different name please specify.
 
