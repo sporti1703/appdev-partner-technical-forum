@@ -15,8 +15,8 @@ This tutorial demonstrates how to:
 
 ### Prerequisites ###
 
-- Running and "empty" [Database Cloud Service](../preparation.md) instance which has no Java Cloud Services dependency.
-- Download SSH keypair (`pk.openssh`, `public.key`) into your `/u01/content/cloud-native-devops-workshop/cloud-utils` directory from image [location](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk). Than change the permissions of the private key:
+- Running and "empty" [Database Cloud Service](../preparation.md) instance which has no Java Cloud Services dependency. It is already provisioned on your account, please check your [Database Cloud Service console](https://dbaas.oraclecloud.com/dbaas/faces/dbRunner.jspx). Service name: **techcoDB** (or **techcoDB2**)
+- [Download] SSH keypair (`pk.openssh`, `public.key`) into your `/u01/content/cloud-native-devops-workshop/cloud-utils` directory from this [location](https://drive.google.com/open?id=0B0MXC4qaECO6RHBWMEttdW9fOVk). Than change the permissions of the private key:
 
 		[oracle@localhost cloud-utils]$ chmod 400 /u01/content/cloud-native-devops-workshop/cloud-utils/pk.openssh		
 
